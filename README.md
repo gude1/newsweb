@@ -1,4 +1,4 @@
-# Docker Compose Instructions
+# NewsWebapp
 This respository is a vite react web application that users can login into to read news from credible sources across the world. This Frontend app consumes the endpoints of <a href="https://github.com/gude1/NewsAggergatorApi">NewsAggregatorApi</a>
 
 ## Table of Contents
