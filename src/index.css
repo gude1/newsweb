@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "inter";
+    src: url("../public/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "chirp";
+    src: url("/public/fonts/Chirp-Regular.woff2");
+}
+
+@layer base {
+
+
+    html,
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        box-sizing: border-box;
+    }
+
+    input select,
+    textarea {
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+        -webkit-touch-callout: text;
+        border: none;
+        outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+
+    /* Firefox */
+    * {
+        scrollbar-width: 0px;
+        /* scrollbar-color: #E5E5E5 transparent; */
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@layer components {
+    .img-placeholder-skeleton {
+        background-color: #ededed;
+        background: linear-gradient(100deg,
+                rgba(255, 255, 255, 0) 40%,
+                rgba(255, 255, 255, 0.5) 50%,
+                rgba(255, 255, 255, 0) 60%) #ededed;
+        background-position-x: 180%;
+        background-size: 200% 100%;
+    }
+}

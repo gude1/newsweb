@@ -19,9 +19,10 @@ This respository is a vite react web application that users can login into to re
 <li>cd into the root project dir </li>
 
 ```bash
-docker compose up --build
+yarn install
+yarn run dev
 ```
-React app should be available on http://127.0.0.1:8100/
+React app should be available on your local machine
 
 ## Tech Stack
 Vite React, Tailwindcss, Typescript
