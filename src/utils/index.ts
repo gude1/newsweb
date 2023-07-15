@@ -17,10 +17,10 @@ export const Console =
     : console;
 
 export const getBaseUrl = () => {
-  return "http://127.0.0.1:8000/api";
-  // if (import.meta.env.MODE == "development") {
-  //   return "http://127.0.0.1:8000/api";
-  // }
+  if (import.meta.env.MODE == "development") {
+    return "http://127.0.0.1:8000/api";
+  }
+  return "https://vercel-newsaggregator-api.vercel.app/api";
 };
 
 export function setCookie(cname = "", cvalue = "", exdays = 1) {
