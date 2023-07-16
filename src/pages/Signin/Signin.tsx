@@ -103,7 +103,7 @@ function Signin() {
         setPasswordInput({});
         setCookie("id_1", result.data.token);
         Swal.fire({
-          title: "Signup Success!",
+          title: "Signin Success!",
           icon: "success",
           confirmButtonColor: "rgba(0, 51, 153, 1)",
           allowOutsideClick: false,
